@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".Main4Activity">
 
-    <android.support.design.widget.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@null"
@@ -14,18 +14,18 @@
         android:theme="@style/AppTheme.AppBarOverlay"
         app:elevation="0dp">
 
-        <android.support.v7.widget.Toolbar
+        <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
             android:layout_height="?attr/actionBarSize"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:theme="@style/AppTheme.Toolbar">
 
-        </android.support.v7.widget.Toolbar>
+        </androidx.appcompat.widget.Toolbar>
 
-    </android.support.design.widget.AppBarLayout>
+    </com.google.android.material.appbar.AppBarLayout>
 
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="-24dp"
@@ -37,29 +37,28 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
                 android:paddingLeft="16dp"
-                android:paddingRight="16dp"
                 android:paddingTop="16dp"
-                android:paddingBottom="44dp"
-                android:orientation="vertical">
+                android:paddingRight="16dp"
+                android:paddingBottom="44dp">
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/calibri"
                     android:text="Favourite"
                     android:textColor="#000000"
-                    android:textSize="32sp"
-                    android:fontFamily="@font/calibri"
-                    />
+                    android:textSize="32sp" />
+
                 <View
                     android:layout_width="100dp"
                     android:layout_height="4dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="24dp"
-                    android:background="#ffc6c6"
-                    />
+                    android:background="#ffc6c6" />
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -67,37 +66,35 @@
                     android:padding="8dp"
                     android:weightSum="100">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_1"
-                            />
+                            android:src="@drawable/favorite_img_1" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_2"
-                            />
+                            android:src="@drawable/favorite_img_2" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -107,37 +104,35 @@
                     android:padding="8dp"
                     android:weightSum="100">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_3"
-                            />
+                            android:src="@drawable/favorite_img_3" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_4"
-                            />
+                            android:src="@drawable/favorite_img_4" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -147,37 +142,35 @@
                     android:padding="8dp"
                     android:weightSum="100">
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginRight="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginEnd="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_5"
-                            />
+                            android:src="@drawable/favorite_img_5" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
-                    <android.support.v7.widget.CardView
+                    <androidx.cardview.widget.CardView
                         android:layout_width="0dp"
                         android:layout_height="wrap_content"
-                        android:layout_marginLeft="8dp"
-                        app:cardCornerRadius="16dp"
-                        android:layout_weight="50">
+                        android:layout_marginStart="8dp"
+                        android:layout_weight="50"
+                        app:cardCornerRadius="16dp">
 
                         <ImageView
                             android:layout_width="match_parent"
                             android:layout_height="200dp"
                             android:scaleType="centerCrop"
-                            android:src="@drawable/favorite_img_6"
-                            />
+                            android:src="@drawable/favorite_img_6" />
 
-                    </android.support.v7.widget.CardView>
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
 
@@ -185,7 +178,7 @@
 
         </ScrollView>
 
-        <android.support.design.widget.FloatingActionButton
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/favorite"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -245,8 +238,8 @@
                     android:layout_height="2dp"
                     android:layout_gravity="center"
                     android:layout_marginTop="8dp"
-                    android:visibility="invisible"
-                    android:background="@color/colorPrimaryDark" />
+                    android:background="@color/colorPrimaryDark"
+                    android:visibility="invisible" />
 
             </LinearLayout>
 
@@ -254,4 +247,4 @@
 
     </RelativeLayout>
 
-</android.support.design.widget.CoordinatorLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
